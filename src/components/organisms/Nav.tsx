@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav className="sticky top-0 inset-x-0 w-full bg-white flex">
+    <nav className="sticky top-0 z-50 inset-x-0 w-full bg-white flex">
       <div className="py-4 px-12 text-4xl uppercase shrink font-bold">
         Panzel
       </div>

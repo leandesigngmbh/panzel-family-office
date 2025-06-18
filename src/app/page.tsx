@@ -1,5 +1,6 @@
 import Agenda from "@/components/molecules/Agenda";
 import Hero from "@/components/molecules/Hero";
+import Manifest from "@/components/molecules/Manifest";
 import Overview from "@/components/molecules/Overview";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import Footer from "@/components/organisms/Footer";
@@ -23,6 +24,14 @@ export default function Home() {
         {/* Placeholder End */}
 
         <Agenda />
+
+        <div className="w-full h-screen items-center justify-center bg-white/50 flex">
+          <span className="border border-current rounded-full p-8">
+            Video Placeholder 🎥
+          </span>
+        </div>
+
+        <Manifest />
       </main>
 
       <Footer />

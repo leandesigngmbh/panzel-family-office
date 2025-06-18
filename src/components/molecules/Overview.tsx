@@ -21,8 +21,12 @@ const Overview = () => {
         </p>
 
         <ul className="flex items-start flex-col w-full">
-          {keywords.map((item) => {
-            return <li className="text-6xl">{item}</li>;
+          {keywords.map((item, i) => {
+            return (
+              <li key={i} className="text-6xl">
+                {item}
+              </li>
+            );
           })}
         </ul>
       </div>
