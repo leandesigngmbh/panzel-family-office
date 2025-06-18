@@ -25,7 +25,7 @@ const Agenda = () => {
             trustworthy companies.
           </h4>
 
-          <p className="text-xs">01</p>
+          <p className="text-xs">02</p>
         </div>
         {/* Card 2 End */}
 
@@ -36,7 +36,7 @@ const Agenda = () => {
             special.
           </h4>
 
-          <p className="text-xs">01</p>
+          <p className="text-xs">03</p>
         </div>
         {/* Card 3 End */}
       </div>

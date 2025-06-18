@@ -25,13 +25,19 @@ export default function Home() {
 
         <Agenda />
 
+        {/* Video Placeholder Start */}
         <div className="w-full h-screen items-center justify-center bg-white/50 flex">
           <span className="border border-current rounded-full p-8">
             Video Placeholder 🎥
           </span>
         </div>
+        {/* Video Placeholder End */}
 
         <Manifest />
+
+        {/* Placeholder Start */}
+        <div className="h-[50vh]"></div>
+        {/* Placeholder End */}
       </main>
 
       <Footer />
