@@ -1,8 +1,9 @@
+import Agenda from "@/components/molecules/Agenda";
 import Hero from "@/components/molecules/Hero";
+import Overview from "@/components/molecules/Overview";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -14,6 +15,14 @@ export default function Home() {
         <ShaderBackground />
 
         <Hero />
+
+        <Overview />
+
+        {/* Placeholder Start */}
+        <div className="h-[50vh]"></div>
+        {/* Placeholder End */}
+
+        <Agenda />
       </main>
 
       <Footer />

@@ -4,7 +4,7 @@ const Nav = () => {
       <div className="py-4 px-12 text-4xl uppercase shrink font-bold">
         Panzel
       </div>
-      <div className="py-4 px-12 text-xl grow bg-black text-white flex items-center justify-between">
+      <div className="py-4 px-12 text-xl grow bg-gray-900 text-white flex items-center justify-between">
         <div>Family Office</div>
 
         <ul className="flex gap-3">
