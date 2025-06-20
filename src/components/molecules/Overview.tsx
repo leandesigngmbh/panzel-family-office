@@ -13,13 +13,17 @@ const Overview = () => {
     <div className="flex w-full">
       <div
         data-speed="0.9"
-        className="bg-black text-white min-h-[140vh] w-full p-4 flex flex-col items-end text-right justify-between"
+        className="bg-black text-white min-h-[140vh] w-full p-4 flex basis-1/2 flex-col items-end text-right justify-between"
       >
-        <p className="text-8xl tracking-tight">
-          {/* <span className="text-gray-400">Driven by</span> */}
-          {/* <br /> */}
-          Built on <br /> legacy.
-        </p>
+        <div className="flex w-full justify-between">
+          <h2 className="text-sm whitespace-nowrap pl-4">About us.</h2>
+
+          <p className="text-8xl tracking-tight">
+            {/* <span className="text-gray-400">Driven by</span> */}
+            {/* <br /> */}
+            Built on <br /> legacy.
+          </p>
+        </div>
 
         <ul className="flex items-start flex-col w-full gap-12">
           <div className="flex items-start flex-col w-full">
@@ -38,7 +42,7 @@ const Overview = () => {
 
       <div
         data-speed="1.1"
-        className="bg-white text-black min-h-[140vh] w-full"
+        className="bg-white basis-1/2 text-black min-h-[140vh] w-full"
       >
         <p className="p-4 text-8xl tracking-tight">
           Driven by innovation. <br />  
