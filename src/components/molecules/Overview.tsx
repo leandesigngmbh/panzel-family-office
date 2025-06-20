@@ -1,20 +1,50 @@
+"use client";
+
 import Image from "next/image";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useGSAP } from "@gsap/react";
+// import { useRef } from "react";
+
+const keywords = [
+  "Distribution",
+  "Insights",
+  "Collaboration",
+  "Impact",
+  "Strategy",
+  "Growth",
+  "Transformation",
+  "-Future",
+];
+
+// if (typeof window !== "undefined") {
+//   gsap.registerPlugin(ScrollTrigger, useGSAP);
+// }
 
 const Overview = () => {
-  const keywords = [
-    "Distribution",
-    "Insights",
-    "Collaboration",
-    "Impact",
-    "Strategy",
-    "Growth",
-    "Transformation",
-    "-Future",
-  ];
+  //   const container = useRef(null);
+
+  //   useGSAP(
+  //     () => {
+  //       ScrollTrigger.create({
+  //         trigger: ".box-c",
+  //         pin: true,
+  //         start: "center center",
+  //         end: "+=300",
+  //         markers: true,
+  //       });
+  //     },
+  //     {
+  //       scope: container,
+  //     }
+  //   );
 
   return (
     <div className="flex w-full text-8xl">
-      <div className="bg-black text-white min-h-[140vh] w-full p-4 flex flex-col items-end text-right justify-between">
+      <div
+        data-speed="0.9"
+        className="bg-black text-white min-h-[140vh] w-full p-4 flex flex-col items-end text-right justify-between"
+      >
         <p>
           Jan. 26 <br></br>
           2024
@@ -31,7 +61,10 @@ const Overview = () => {
         </ul>
       </div>
 
-      <div className="bg-white text-black min-h-[140vh] w-full translate-y-[2em]">
+      <div
+        data-speed="1.1"
+        className="bg-white text-black min-h-[140vh] w-full"
+      >
         <p className="p-4">
           London <br />  
         </p>
