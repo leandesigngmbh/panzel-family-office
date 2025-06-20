@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const keywords = [
   "Asset Management",
   "Wealth Management",
