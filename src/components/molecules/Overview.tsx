@@ -18,7 +18,7 @@ const Overview = () => {
         <p className="text-8xl tracking-tight">
           {/* <span className="text-gray-400">Driven by</span> */}
           {/* <br /> */}
-          Built on legacy.
+          Built on <br /> legacy.
         </p>
 
         <ul className="flex items-start flex-col w-full gap-12">
