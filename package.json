@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@radix-ui/react-navigation-menu": "^1.2.13",
     "@radix-ui/react-slot": "^1.2.3",
     "@react-spring/three": "^10.0.1",
@@ -16,6 +17,7 @@
     "@shadergradient/react": "^2.0.27",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
     "lucide-react": "^0.517.0",
     "next": "15.3.3",
     "react": "^19.0.0",
