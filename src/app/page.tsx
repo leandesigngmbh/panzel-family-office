@@ -15,11 +15,11 @@ export default function Home() {
     <>
       <Nav />
 
+      <ShaderBackground />
+
       <SmootherContainer>
         <div className="relative">
-          <main className="flex flex-col items-center">
-            <ShaderBackground />
-
+          <main className="flex flex-col items-center min-h-screen">
             {/* <SmootherTest /> */}
 
             <Hero />
