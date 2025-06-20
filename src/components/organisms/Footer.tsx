@@ -13,8 +13,8 @@ const Footer = () => {
       </div>
 
       <div>
-        Polígono Industrial Sector 919290, FONTANAR (Guadalajara) Spain. Tel:
-        +34 949 88 82 10
+        Panzel Family Office, Rue de Lausanne 43b, 1110 Morges, Switzerland.
+        Phone +41798444988. Email hej@panzel.ch
       </div>
     </footer>
   );
