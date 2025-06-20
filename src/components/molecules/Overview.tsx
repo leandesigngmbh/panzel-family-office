@@ -13,12 +13,12 @@ const keywords = [
 
 const Overview = () => {
   return (
-    <div className="flex w-full text-8xl tracking-tight">
+    <div className="flex w-full">
       <div
         data-speed="0.9"
         className="bg-black text-white min-h-[140vh] w-full p-4 flex flex-col items-end text-right justify-between"
       >
-        <p>
+        <p className="text-8xl tracking-tight">
           Jan. 26 <br></br>
           2024
         </p>
@@ -38,7 +38,7 @@ const Overview = () => {
         data-speed="1.1"
         className="bg-white text-black min-h-[140vh] w-full"
       >
-        <p className="p-4">
+        <p className="p-4 text-8xl tracking-tight">
           London <br />  
         </p>
 

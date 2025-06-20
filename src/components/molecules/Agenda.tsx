@@ -1,7 +1,7 @@
 const Agenda = () => {
   return (
-    <div className="bg-gray-100 text-8xl p-8">
-      <div className="min-h-[50vh] max-w-prose">
+    <div className="bg-gray-100 p-8">
+      <div className="min-h-[50vh] max-w-prose text-8xl tracking-tight">
         Building the future with the right partners.
       </div>
 
