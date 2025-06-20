@@ -7,14 +7,17 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const manifestItems = [
-  "Turn vision into motion. ",
-  "Challenge, refine, evolve. ",
-  "The future is a playground. ",
-  "Change starts within. ",
-  "Nourish curiosity, expand possibility. ",
-  "Shift perspectives, shape reality. ",
-  "Think freely, act boldly. ",
-  "Stay restless, stay real.",
+  "Make your vision explode. ",
+
+  "Flip the game, and never settle. ",
+
+  "The future’s your playground—take it by force. ",
+
+  "Real change? It starts inside. ",
+
+  "Think savage. Move fearless. ",
+
+  "Stay hungry. Stay raw. ",
 ];
 
 if (typeof window !== "undefined") {
@@ -78,7 +81,7 @@ const Manifest = () => {
 
       {/* RIGHT PINNED MANIFEST TEXTS */}
       <div className="manifest-right w-full h-screen items-center flex justify-start py-8 pr-8">
-        <div className="max-w-[22ch] text-pretty">
+        <div className="max-w-[20ch] text-pretty">
           {manifestItems.map((item, i) => (
             <span
               key={i}

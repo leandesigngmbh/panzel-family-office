@@ -2,7 +2,7 @@ const Agenda = () => {
   return (
     <div className="bg-gray-100 p-8">
       <div className="min-h-[50vh] max-w-prose text-8xl tracking-tight">
-        Building the future with the right partners.
+        Where shared vision meets sustainable growth.
       </div>
 
       <div className="grid grid-cols-3 border-t border-gray-200 bg-gray-200 gap-px">

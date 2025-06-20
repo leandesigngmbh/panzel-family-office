@@ -31,13 +31,16 @@ const Nav = () => {
       }`}
     >
       <div className="py-4 px-12 text-4xl shrink font-semibold">Panzel</div>
-      <div className="py-4 px-12 text-xl grow bg-black text-white flex items-center justify-between">
-        <p>Family Office</p>
+      <div className="py-4 px-12 text-sm grow bg-black text-white flex items-center justify-between">
+        <p className="text-4xl">Since 1918</p>
 
         <ul className="flex gap-3">
-          <li>Overview</li>
-          <li>Agenda</li>
-          <li>Info</li>
+          <li>About us</li>
+          <li>Strategy</li>
+          <li>Manifest</li>
+          <li>Team</li>
+          <li>KPIs</li>
+          <li>Contact</li>
         </ul>
       </div>
     </nav>

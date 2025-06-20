@@ -1,10 +1,10 @@
 import SmootherContainer from "@/components/atoms/SmootherContainer";
-import SmootherTest from "@/components/atoms/SmootherTest";
 import Agenda from "@/components/molecules/Agenda";
 import Hero from "@/components/molecules/Hero";
 import Manifest from "@/components/molecules/Manifest";
 import Overview from "@/components/molecules/Overview";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
+import StatsSection from "@/components/molecules/StatsSection";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
 
@@ -44,6 +44,8 @@ export default function Home() {
             {/* Placeholder Start */}
             <div className="h-[50vh]"></div>
             {/* Placeholder End */}
+
+            <StatsSection />
           </main>
 
           <Footer />
