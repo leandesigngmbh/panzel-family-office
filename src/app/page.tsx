@@ -1,5 +1,6 @@
 import SmootherContainer from "@/components/atoms/SmootherContainer";
 import Agenda from "@/components/molecules/Agenda";
+import BackgroundVideo from "@/components/molecules/BackgroundVideo";
 import Hero from "@/components/molecules/Hero";
 import Manifest from "@/components/molecules/Manifest";
 import Overview from "@/components/molecules/Overview";
@@ -31,13 +32,13 @@ export default function Home() {
 
             <Agenda />
 
-            {/* Video Placeholder Start */}
-            <div className="w-full h-screen items-center justify-center bg-white/50 flex">
-              <span className="border border-current rounded-full p-8">
-                Video Placeholder 🎥
-              </span>
+            {/* Placeholder Start */}
+            <div className="h-[50vh]"></div>
+            {/* Placeholder End */}
+
+            <div className="relative h-screen z-50 w-full">
+              <BackgroundVideo src={"/assets/bg-video.mp4"} />
             </div>
-            {/* Video Placeholder End */}
 
             <Manifest />
 
