@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const menuItems = [
   "About us",
   "Build What’s Next.",
+  "Purpose",
   "Manifest",
   "Team",
   "KPIs",

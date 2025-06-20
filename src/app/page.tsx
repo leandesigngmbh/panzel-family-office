@@ -4,6 +4,7 @@ import BackgroundVideo from "@/components/molecules/BackgroundVideo";
 import Hero from "@/components/molecules/Hero";
 import Manifest from "@/components/molecules/Manifest";
 import Overview from "@/components/molecules/Overview";
+import Purpose from "@/components/molecules/Purpose";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import StatsSection from "@/components/molecules/StatsSection";
 import Footer from "@/components/organisms/Footer";
@@ -39,6 +40,8 @@ export default function Home() {
             <div className="relative h-screen z-50 w-full">
               <BackgroundVideo src={"/assets/bg-video.mp4"} />
             </div>
+
+            <Purpose />
 
             <Manifest />
 

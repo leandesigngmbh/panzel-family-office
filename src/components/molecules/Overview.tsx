@@ -16,7 +16,7 @@ const Overview = () => {
         className="bg-black text-white min-h-[140vh] w-full p-4 flex basis-1/2 flex-col items-end text-right justify-between"
       >
         <div className="flex w-full justify-between">
-          <h2 className="text-sm whitespace-nowrap pl-4">About us.</h2>
+          <h2 className="text-sm whitespace-nowrap pl-4">● About us</h2>
 
           <p className="text-8xl tracking-tight">
             {/* <span className="text-gray-400">Driven by</span> */}

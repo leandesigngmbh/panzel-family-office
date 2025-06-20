@@ -4,7 +4,7 @@ const Agenda = () => {
   return (
     <div className="bg-gray-100 p-8 w-full">
       <div className="grid grid-cols-3">
-        <h2 className="text-sm whitespace-nowrap">Build What’s Next.</h2>
+        <h2 className="text-sm whitespace-nowrap">● Build What’s Next.</h2>
 
         <div className="min-h-[50vh] col-span-2 flex flex-col gap-16 pb-8 pl-4">
           <h3 className="max-w-prose text-8xl tracking-tight">
