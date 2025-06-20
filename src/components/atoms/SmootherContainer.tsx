@@ -11,6 +11,7 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(useGSAP);
 }
 
+// @ts-ignore
 const SmootherContainer = ({ children }) => {
   const smoother = useRef(null);
   const pathname = usePathname();
@@ -18,6 +19,7 @@ const SmootherContainer = ({ children }) => {
   useGSAP(
     () => {
       gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+      // @ts-ignore
       smoother.current = ScrollSmoother.create({
         smooth: 2,
         effects: true,
