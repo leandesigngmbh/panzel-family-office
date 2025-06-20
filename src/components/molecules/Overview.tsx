@@ -51,18 +51,55 @@ const Overview = () => {
               explore ideas and conceptualize a vision.
             </p>
 
-            <Image
+            <div className="w-full aspect-[4/6] relative flex flex-col">
+              <div className="w-full h-1/12 bg-orange-300 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                8.3 %
+              </div>
+              <div className="w-full h-1/12 bg-orange-400 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                8.3 %
+              </div>
+              <div className="w-full h-2/12 bg-orange-500 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                16.6 %
+              </div>
+              <div className="w-full h-3/12 bg-orange-600 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                25%
+              </div>
+              <div className="w-full h-5/12 bg-orange-700 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                41%
+              </div>
+            </div>
+
+            {/* <Image
               src={"/assets/overview-image2.jpg"}
               width={900}
               height={1622}
               // className="bg-contain"
               alt=""
-            />
+            /> */}
           </div>
           {/* Left Col End */}
 
           {/* Right Col Start */}
-          <div className="flex flex-col w-full">
+          <div className="w-full">
+            <div className="w-full aspect-[4/6] relative flex flex-col">
+              <div className="w-full h-1/12 bg-blue-300 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                8.3 %
+              </div>
+              <div className="w-full h-1/12 bg-blue-400 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                8.3 %
+              </div>
+              <div className="w-full h-2/12 bg-blue-500 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                16.6 %
+              </div>
+              <div className="w-full h-3/12 bg-blue-600 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                25%
+              </div>
+              <div className="w-full h-5/12 bg-blue-700 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+                41%
+              </div>
+            </div>
+          </div>
+          {/* <div className="flex flex-col w-full">
             <Image
               src={"/assets/overview-image1.jpg"}
               width={900}
@@ -70,7 +107,7 @@ const Overview = () => {
               // className="bg-contain"
               alt=""
             />
-          </div>
+          </div> */}
           {/* Right Col End */}
         </div>
       </div>
