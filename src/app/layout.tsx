@@ -44,7 +44,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${suisseIntl.className} font-medium antialiased`}>
+      <body
+        className={`${suisseIntl.className} font-medium subpixel-antialiased`}
+      >
         {children}
       </body>
     </html>
