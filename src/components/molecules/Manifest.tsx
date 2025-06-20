@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 const manifestItems = [
   "Turn vision into motion. ",
@@ -44,7 +45,7 @@ const Manifest = () => {
       pin: ".manifest-right",
       // pinSpacing: true,
       scrub: true,
-      markers: true,
+      // markers: true,
     });
   }, []);
 
@@ -61,7 +62,12 @@ const Manifest = () => {
         {manifestItems.map((_, i) => (
           <div
             key={i}
-            className="manifest-index relative text-[16vw] font-semibold leading-none"
+            className={cn(
+              "manifest-index relative text-[16vw] font-semibold leading-none transition duration-300",
+              activeIndex === i
+                ? "opacity-100 translate-x-16"
+                : "opacity-20 translate-x-0"
+            )}
           >
             <div className="index-trigger absolute top-1/2 left-0 w-full h-1 pointer-events-none" />
             0{i + 1}
@@ -72,13 +78,14 @@ const Manifest = () => {
 
       {/* RIGHT PINNED MANIFEST TEXTS */}
       <div className="manifest-right w-full h-screen items-center flex justify-start py-8 pr-8">
-        <div className="max-w-[25ch] text-pretty">
+        <div className="max-w-[22ch] text-pretty">
           {manifestItems.map((item, i) => (
             <span
               key={i}
-              className={`transition-opacity duration-300 ${
+              className={cn(
+                "transition-opacity duration-300",
                 activeIndex === i ? "opacity-100" : "opacity-20"
-              }`}
+              )}
             >
               {item}
             </span>
