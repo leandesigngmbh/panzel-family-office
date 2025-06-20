@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { ReactNode, useRef } from "react";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -11,8 +11,12 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(useGSAP);
 }
 
-const SmootherContainer = ({ children }) => {
-  const smoother = useRef();
+type SmootherContainerProps = {
+  children: ReactNode;
+};
+
+const SmootherContainer = ({ children }: SmootherContainerProps) => {
+  const smoother = useRef<ScrollSmoother | null>(null);
   const pathname = usePathname();
 
   useGSAP(
