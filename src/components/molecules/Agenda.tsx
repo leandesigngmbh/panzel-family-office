@@ -18,7 +18,7 @@ const Agenda = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 border-t border-gray-200 bg-gray-200 gap-px">
+      <div className="grid grid-cols-2 border-y border-gray-200 bg-gray-200 gap-px">
         {/* Card 1 Start */}
         <div className="w-full flex flex-col bg-gray-100 p-4 gap-24 justify-between text-base">
           <h4 className="text-2xl text-gray-400 max-w-sm text-pretty">
@@ -64,6 +64,23 @@ const Agenda = () => {
         </div>
         {/* Card 2 End */}
       </div>
+
+      {/* <div className="grid grid-cols-2">
+        <h2 className="text-sm whitespace-nowrap">Build What’s Next.</h2>
+
+        <div className="min-h-[50vh] flex flex-col gap-24 pt-8">
+          <h3 className="max-w-prose text-8xl tracking-tight">
+            Your Future. Your Venture. Your Rules.
+          </h3>
+
+          <p className="max-w-sm">
+            Tired of the "take over the family business" talk? You’ve got your
+            own ideas — and we’re here to help you build them. Panzel Family
+            Office backs next-gen founders from entrepreneurial families who
+            want to go their own way — without tearing the legacy apart.
+          </p>
+        </div>
+      </div> */}
     </div>
   );
 };
