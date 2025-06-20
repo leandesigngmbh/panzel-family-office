@@ -57,7 +57,7 @@ const Manifest = () => {
       ref={container}
       className="bg-black text-white text-4xl flex relative w-full"
     >
-      <p className="text-sm whitespace-nowrap p-8">Our Manifest</p>
+      <h2 className="text-sm whitespace-nowrap p-8">Our Manifest</h2>
 
       {/* LEFT SCROLLING INDEXES */}
       <div className="flex flex-col w-full">
