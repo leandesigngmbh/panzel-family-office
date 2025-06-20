@@ -31,7 +31,7 @@ const Overview = () => {
         </ul>
       </div>
 
-      <div className="bg-white text-black min-h-[140vh] w-full mt-[2em]">
+      <div className="bg-white text-black min-h-[140vh] w-full translate-y-[2em]">
         <p className="p-4">
           London <br />  
         </p>
