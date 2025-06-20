@@ -22,7 +22,7 @@ const Manifest = () => {
             return (
               <li
                 key={i}
-                className="text-[16vw] font-bold not-first:text-gray-600"
+                className="text-[16vw] font-semibold not-first:text-gray-600"
               >
                 {"0" + (i + 1)} 
               </li>

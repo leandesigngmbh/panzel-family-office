@@ -1,10 +1,4 @@
-"use client";
-
 import Image from "next/image";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { useGSAP } from "@gsap/react";
-// import { useRef } from "react";
 
 const keywords = [
   "Distribution",
@@ -17,30 +11,9 @@ const keywords = [
   "-Future",
 ];
 
-// if (typeof window !== "undefined") {
-//   gsap.registerPlugin(ScrollTrigger, useGSAP);
-// }
-
 const Overview = () => {
-  //   const container = useRef(null);
-
-  //   useGSAP(
-  //     () => {
-  //       ScrollTrigger.create({
-  //         trigger: ".box-c",
-  //         pin: true,
-  //         start: "center center",
-  //         end: "+=300",
-  //         markers: true,
-  //       });
-  //     },
-  //     {
-  //       scope: container,
-  //     }
-  //   );
-
   return (
-    <div className="flex w-full text-8xl">
+    <div className="flex w-full text-8xl tracking-tight">
       <div
         data-speed="0.9"
         className="bg-black text-white min-h-[140vh] w-full p-4 flex flex-col items-end text-right justify-between"
