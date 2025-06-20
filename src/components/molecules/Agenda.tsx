@@ -6,7 +6,11 @@ const Agenda = () => {
 
         <div className="min-h-[50vh] flex flex-col gap-24 pb-8">
           <h3 className="max-w-prose text-8xl tracking-tight">
-            Your Future. Your Venture. Your Rules.
+            Your Future.
+            <br />
+            Your Venture.
+            <br />
+            Your Rules.
           </h3>
 
           <p className="max-w-sm">
