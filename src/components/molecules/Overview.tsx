@@ -20,7 +20,7 @@ const Overview = () => {
         <p className="text-8xl tracking-tight">
           {/* <span className="text-gray-400">Driven by</span> */}
           {/* <br /> */}
-          Driven by innovation.
+          Built on legacy.
         </p>
 
         <ul className="flex items-start flex-col w-full gap-12">
@@ -43,7 +43,7 @@ const Overview = () => {
         className="bg-white text-black min-h-[140vh] w-full"
       >
         <p className="p-4 text-8xl tracking-tight">
-          Since 1918 <br />  
+          Driven by innovation. <br />  
         </p>
 
         <div className="flex w-full">

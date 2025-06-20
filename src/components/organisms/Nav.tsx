@@ -2,6 +2,15 @@
 
 import { useEffect, useState } from "react";
 
+const menuItems = [
+  "About us",
+  "Build What’s Next.",
+  "Manifest",
+  "Team",
+  "KPIs",
+  "Contact",
+];
+
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -35,12 +44,9 @@ const Nav = () => {
         <p className="text-4xl">Since 1918</p>
 
         <ul className="flex gap-3">
-          <li>About us</li>
-          <li>Strategy</li>
-          <li>Manifest</li>
-          <li>Team</li>
-          <li>KPIs</li>
-          <li>Contact</li>
+          {menuItems.map((item) => {
+            return <li>{item}</li>;
+          })}
         </ul>
       </div>
     </nav>
