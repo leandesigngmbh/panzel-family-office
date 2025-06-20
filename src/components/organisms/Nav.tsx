@@ -44,8 +44,8 @@ const Nav = () => {
         <p className="text-4xl">Since 1918</p>
 
         <ul className="flex gap-3">
-          {menuItems.map((item) => {
-            return <li>{item}</li>;
+          {menuItems.map((item, i) => {
+            return <li key={i}>{item}</li>;
           })}
         </ul>
       </div>
