@@ -7,6 +7,7 @@ import Overview from "@/components/molecules/Overview";
 import Purpose from "@/components/molecules/Purpose";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import StatsSection from "@/components/molecules/StatsSection";
+import Team from "@/components/molecules/Team";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
 
@@ -34,20 +35,22 @@ export default function Home() {
             <Agenda />
 
             {/* Placeholder Start */}
-            <div className="h-[50vh]"></div>
+            {/* <div className="h-[50vh]"></div> */}
             {/* Placeholder End */}
 
             <Purpose />
 
-            <div className="relative h-screen z-50 w-full">
+            <div data-speed="0.7" className="relative h-[100vh] -z-10 w-full">
               <BackgroundVideo src={"/assets/bg-video.mp4"} />
             </div>
 
             <Manifest />
 
             {/* Placeholder Start */}
-            <div className="h-[50vh]"></div>
+            {/* <div className="h-[50vh]"></div> */}
             {/* Placeholder End */}
+
+            {/* <Team /> */}
 
             <StatsSection />
           </main>

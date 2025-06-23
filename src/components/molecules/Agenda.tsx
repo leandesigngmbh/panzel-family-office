@@ -12,13 +12,9 @@ const Agenda = () => {
       {/* Grid Item 2 Start */}
       <div className="min-h-[50vh] col-span-2 flex flex-col gap-16 px-4 py-12 bg-gray-100">
         <h3 className="max-w-prose text-8xl tracking-tight">
-          {/* One Family.
+          Unified roots.
           <br />
-          Two Paths.
-          <br />
-          One Strategy. */}
-          One bond. <br />
-          Two ventures.
+          Evolving paths.
         </h3>
 
         <p className="max-w-sm">

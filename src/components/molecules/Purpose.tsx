@@ -1,6 +1,6 @@
 const Purpose = () => {
   return (
-    <div className="w-full grid grid-cols-3 gap-px mt-px">
+    <div className="w-full grid grid-cols-3 gap-px py-px bg-white ">
       <h2 className="bg-black text-white text-sm whitespace-nowrap px-8 py-12">
         ● Purpose
       </h2>

@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 type SubItem = {
   from: number | string;
   to: number | string;
+  prefix?: string;
   suffix?: string;
 };
 
@@ -13,6 +14,7 @@ type StatsItemProps = {
   title: string;
   subtitle: string;
   color: string;
+  textColor?: "white" | undefined;
   subItems: SubItem[];
 };
 
@@ -21,10 +23,12 @@ const statsItems: StatsItemProps[] = [
     title: "Pitch Decks Received",
     subtitle: "The breakdown of pitch decks that we've received as of 22/04/25",
     color: "blue",
+    textColor: "white",
     subItems: [
-      { from: 0, to: 30, suffix: "%" }, // main stat
-      { from: 30, to: 60, suffix: "%" },
-      { from: 60, to: 90, suffix: "%" },
+      { from: 0, to: 222 },
+      { from: 0, to: 30, prefix: "All Women", suffix: "%" },
+      { from: 0, to: 51, prefix: "All Men", suffix: "%" },
+      { from: 0, to: 19, prefix: "Mixed", suffix: "%" },
     ],
   },
   {
@@ -33,9 +37,44 @@ const statsItems: StatsItemProps[] = [
       "Of pitch decks reviewed, this is a breakdown of those that progressed to meetings with us as of 22/04/2025",
     color: "cyan",
     subItems: [
-      { from: 0, to: 30, suffix: "%" }, // main stat
-      { from: 30, to: 60, suffix: "%" },
-      { from: 60, to: 90, suffix: "%" },
+      { from: 0, to: 87 },
+      { from: 0, to: 32, prefix: "All Women", suffix: "%" },
+      { from: 0, to: 52, prefix: "All Men", suffix: "%" },
+      { from: 0, to: 16, prefix: "Mixed", suffix: "%" },
+    ],
+  },
+  {
+    title: "All Venture",
+    subtitle:
+      "We've been tracking equity of our dealflow since February 2024, all other data is all-time, since venture inception. This is a breakdown of our investments across all venture by count.",
+    color: "violet",
+    subItems: [
+      { from: 0, to: 90 },
+      { from: 0, to: 13, prefix: "All Women", suffix: "%" },
+      { from: 0, to: 62, prefix: "All Men", suffix: "%" },
+      { from: 0, to: 24, prefix: "Mixed", suffix: "%" },
+    ],
+  },
+  {
+    title: "Startup Investments",
+    subtitle: "This is a breakdown of our startups by amount invested.",
+    color: "orange",
+    subItems: [
+      { from: 0, to: 67 },
+      { from: 0, to: 15, prefix: "All Women", suffix: "%" },
+      { from: 0, to: 70, prefix: "All Men", suffix: "%" },
+      { from: 0, to: 15, prefix: "Mixed", suffix: "%" },
+    ],
+  },
+  {
+    title: "Fund Investments",
+    subtitle: "This is a breakdown of funds by amount invested.",
+    color: "yellow",
+    subItems: [
+      { from: 0, to: 23 },
+      { from: 0, to: 13, prefix: "All Women", suffix: "%" },
+      { from: 0, to: 39, prefix: "All Men", suffix: "%" },
+      { from: 0, to: 48, prefix: "Mixed", suffix: "%" },
     ],
   },
 ];
@@ -49,14 +88,6 @@ const COLOR_SHADE_MAP: Record<string, string[]> = {
     "bg-green-600",
     "bg-green-700",
   ],
-  amber: [
-    "bg-amber-200",
-    "bg-amber-300",
-    "bg-amber-400",
-    "bg-amber-500",
-    "bg-amber-600",
-    "bg-amber-700",
-  ],
   blue: [
     "bg-blue-200",
     "bg-blue-300",
@@ -65,13 +96,29 @@ const COLOR_SHADE_MAP: Record<string, string[]> = {
     "bg-blue-600",
     "bg-blue-700",
   ],
-  red: [
-    "bg-red-200",
-    "bg-red-300",
-    "bg-red-400",
-    "bg-red-500",
-    "bg-red-600",
-    "bg-red-700",
+  violet: [
+    "bg-violet-200",
+    "bg-violet-300",
+    "bg-violet-400",
+    "bg-violet-500",
+    "bg-violet-600",
+    "bg-violet-700",
+  ],
+  orange: [
+    "bg-orange-200",
+    "bg-orange-300",
+    "bg-orange-400",
+    "bg-orange-500",
+    "bg-orange-600",
+    "bg-orange-700",
+  ],
+  yellow: [
+    "bg-yellow-100",
+    "bg-yellow-200",
+    "bg-yellow-300",
+    "bg-yellow-400",
+    "bg-yellow-500",
+    "bg-yellow-600",
   ],
 };
 
@@ -90,17 +137,22 @@ const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
 
   return (
     <li className="flex w-full bg-gray-100 group hover:bg-gray-200 transition-colors duration-300">
-      <div className="flex flex-col px-8 py-8 min-h-52 gap-3 max-w-md">
-        <h2 className="text-4xl font-semibold">{title}</h2>
+      <div className="flex flex-col px-8 py-8 min-h-52 gap-3 max-w-md w-full">
+        <h2 className="text-4xl">{title}</h2>
         <p>{subtitle}</p>
       </div>
 
       <div className={cn("flex-1 flex flex-col justify-end", wrapperShade)}>
         {/* MAIN ITEM — FIRST SUBITEM */}
         {mainItem && (
-          <div className="px-3 text-8xl pt-24 py-6 flex items-baseline gap-2">
-            <CountUp from={+mainItem.from} to={+mainItem.to} />
-            {mainItem.suffix && <span>{mainItem.suffix}</span>}
+          <div className="px-3 text-8xl pt-24 py-6 flex flex-col items-baseline gap-2">
+            {mainItem.prefix && (
+              <span className="text-base">{mainItem.prefix}</span>
+            )}
+            <div>
+              <CountUp from={+mainItem.from} to={+mainItem.to} />
+              {mainItem.suffix && <span>{mainItem.suffix}</span>}
+            </div>
           </div>
         )}
 
@@ -111,12 +163,17 @@ const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
               <div
                 key={i}
                 className={cn(
-                  "w-full flex items-end justify-start p-3 min-h-24",
+                  "w-full flex flex-col items-start justify-end p-3 min-h-24",
                   subItemShades[i]
                 )}
               >
-                <CountUp from={+item.from} to={+item.to} />
-                {item.suffix && <span>{item.suffix}</span>}
+                {item.prefix && (
+                  <span className="text-base">{item.prefix}</span>
+                )}
+                <div>
+                  <CountUp from={+item.from} to={+item.to} />
+                  {item.suffix && <span>{item.suffix}</span>}
+                </div>
               </div>
             ))}
           </div>
