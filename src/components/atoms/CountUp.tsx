@@ -37,7 +37,7 @@ const CountUp = ({
         scrollTrigger: {
           trigger: target,
           start: "top 90%",
-          toggleActions: "play none none none",
+          toggleActions: "restart none none none",
         },
         onUpdate: () => {
           target.textContent = obj.val.toFixed(decimals);
