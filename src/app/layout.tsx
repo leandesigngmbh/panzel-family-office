@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${suisseIntl.className} font-medium subpixel-antialiased tracking-tight`}
+        className={`${suisseIntl.className} font-normal subpixel-antialiased tracking-tight`}
       >
         {children}
       </body>

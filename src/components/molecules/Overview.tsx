@@ -60,19 +60,19 @@ const Overview = () => {
             </p>
 
             <div className="w-full aspect-[4/6] relative flex flex-col">
-              <div className="w-full h-1/12 bg-amber-300 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+              <div className="w-full h-1/12 bg-amber-300 text-white flex items-start justify-end text-xs flex-col py-1 px-4">
                 8.3 %
               </div>
-              <div className="w-full h-1/12 bg-amber-400 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+              <div className="w-full h-1/12 bg-amber-400 text-white flex items-start justify-end text-xs flex-col py-1 px-4">
                 8.3 %
               </div>
-              <div className="w-full h-2/12 bg-amber-500 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+              <div className="w-full h-2/12 bg-amber-500 text-white flex items-start justify-end text-xs flex-col py-1 px-4">
                 16.6 %
               </div>
-              <div className="w-full h-3/12 bg-amber-600 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+              <div className="w-full h-3/12 bg-amber-600 text-white flex items-start justify-end text-xs flex-col py-1 px-4">
                 25%
               </div>
-              <div className="w-full h-5/12 bg-amber-700 text-white flex items-start justify-end text-xs flex-col py-1 px-4 font-normal">
+              <div className="w-full h-5/12 bg-amber-700 text-white flex items-start justify-end text-xs flex-col py-1 px-4">
                 41%
               </div>
             </div>

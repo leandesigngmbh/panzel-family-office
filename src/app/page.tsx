@@ -33,6 +33,7 @@ export default function Home() {
 
             <Agenda />
 
+            <Purpose />
             {/* Placeholder Start */}
             <div className="h-[50vh]"></div>
             {/* Placeholder End */}
@@ -40,8 +41,6 @@ export default function Home() {
             <div className="relative h-screen z-50 w-full">
               <BackgroundVideo src={"/assets/bg-video.mp4"} />
             </div>
-
-            <Purpose />
 
             <Manifest />
 
