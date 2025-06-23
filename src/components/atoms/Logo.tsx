@@ -13,7 +13,7 @@ const Logo = () => {
       </svg>
 
       <p className="font-semibold">
-        Panzel <span className="text-gray-400">Family Office</span>
+        Panzel <span className="opacity-60">Family Office</span>
       </p>
     </div>
   );
