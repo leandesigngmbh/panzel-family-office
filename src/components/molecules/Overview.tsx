@@ -52,11 +52,10 @@ const Overview = () => {
           {/* Left Col Start */}
           <div className="flex flex-col w-full">
             <p className="text-lg p-4 mt-40">
-              Backed by three generations of family investors and over a century
-              of real family office experience, Panzel Family Office is your
-              trusted partner in asset management. We offer tailored expertise
-              to protect your wealth and ensure smooth, future-ready succession
-              across generations.
+              Since 1918, Panzel Family Office has redefined what it means to
+              serve families. Independent, family-led, and built on over a
+              century of trust, we go beyond the expected—delivering bold,
+              tailored strategies that make a real impact across generations.
             </p>
 
             <div className="w-full aspect-[4/6] relative flex flex-col">

@@ -4,7 +4,7 @@ const Agenda = () => {
   return (
     <div className="grid grid-cols-3 gap-px w-full">
       {/* Grid 1 Item Start */}
-      <h2 className="text-sm whitespace-nowrap bg-gray-100 px-4 py-12">
+      <h2 className="text-sm whitespace-nowrap bg-gray-100 px-8 py-12">
         ● Build What’s Next.
       </h2>
       {/* Grid 1 Item End */}
@@ -12,11 +12,13 @@ const Agenda = () => {
       {/* Grid Item 2 Start */}
       <div className="min-h-[50vh] col-span-2 flex flex-col gap-16 px-4 py-12 bg-gray-100">
         <h3 className="max-w-prose text-8xl tracking-tight">
-          Your Future.
+          {/* One Family.
           <br />
-          Your Venture.
+          Two Paths.
           <br />
-          Your Rules.
+          One Strategy. */}
+          One bond. <br />
+          Two ventures.
         </h3>
 
         <p className="max-w-sm">
@@ -82,13 +84,11 @@ const Agenda = () => {
 
       {/* Grid Item 6 Start */}
       <div className="w-full col-span-2 flex flex-col items-start bg-gray-100 px-4 py-12 justify-between gap-9">
-        <h3 className="max-w-prose text-5xl tracking-tight">
-          One Family.
-          <br />
-          Two Paths.
-          <br />
+        {/* <h3 className="max-w-prose text-5xl tracking-tight">
+          One Family. <br />
+          Two Paths. <br />
           One Strategy.
-        </h3>
+        </h3> */}
 
         <p className="max-w-3xl text-2xl">
           We align founders and families — so both can grow without stepping on

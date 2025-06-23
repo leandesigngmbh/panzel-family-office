@@ -1,11 +1,19 @@
 const Purpose = () => {
   return (
     <div className="w-full grid grid-cols-3 gap-px mt-px">
-      <h2 className="bg-black text-white text-sm whitespace-nowrap px-8 py-4">
+      <h2 className="bg-black text-white text-sm whitespace-nowrap px-8 py-12">
         ● Purpose
       </h2>
 
-      <div className="col-span-2 bg-black text-white" />
+      <div className="col-span-2 bg-black text-white px-4 py-12">
+        <h3 className="max-w-prose text-8xl tracking-tight">
+          Your Future.
+          <br />
+          Your Venture.
+          <br />
+          Your Rules.
+        </h3>
+      </div>
 
       {/* Card 1 Start */}
       <div className="w-full bg-black text-white py-12 p-8">
