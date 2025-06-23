@@ -53,7 +53,7 @@ const Nav = () => {
       <div className="p-4 text-sm grow flex items-center justify-between">
         <span></span>
 
-        <ul className="flex gap-3">
+        <ul className="flex gap-6">
           {menuItems.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
