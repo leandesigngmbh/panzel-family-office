@@ -8,11 +8,10 @@ import Overview from "@/components/molecules/Overview";
 import Purpose from "@/components/molecules/Purpose";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import StatsSection from "@/components/molecules/StatsSection";
-import Team from "@/components/molecules/Team";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <Nav />
@@ -22,21 +21,13 @@ export default function Home() {
       <SmootherContainer>
         <div className="relative">
           <main className="flex flex-col items-center min-h-screen">
-            {/* <SmootherTest /> */}
-
             <Hero />
 
             <Overview />
 
-            {/* Placeholder Start */}
             <div className="h-[50vh]"></div>
-            {/* Placeholder End */}
 
             <Agenda />
-
-            {/* Placeholder Start */}
-            {/* <div className="h-[50vh]"></div> */}
-            {/* Placeholder End */}
 
             <Purpose />
 
@@ -45,12 +36,6 @@ export default function Home() {
             </div>
 
             <Manifest />
-
-            {/* Placeholder Start */}
-            {/* <div className="h-[50vh]"></div> */}
-            {/* Placeholder End */}
-
-            {/* <Team /> */}
 
             <StatsSection />
 
@@ -62,4 +47,6 @@ export default function Home() {
       </SmootherContainer>
     </>
   );
-}
+};
+
+export default Home;
