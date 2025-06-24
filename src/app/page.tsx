@@ -1,6 +1,7 @@
 import SmootherContainer from "@/components/atoms/SmootherContainer";
 import Agenda from "@/components/molecules/Agenda";
 import BackgroundVideo from "@/components/molecules/BackgroundVideo";
+import Contact from "@/components/molecules/Contact";
 import Hero from "@/components/molecules/Hero";
 import Manifest from "@/components/molecules/Manifest";
 import Overview from "@/components/molecules/Overview";
@@ -52,6 +53,8 @@ export default function Home() {
             {/* <Team /> */}
 
             <StatsSection />
+
+            <Contact />
           </main>
 
           <Footer />

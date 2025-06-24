@@ -1,5 +1,3 @@
-import React from "react";
-
 const Logo = () => {
   return (
     <div className="flex gap-1.5 items-center text-2xl shrink ">
