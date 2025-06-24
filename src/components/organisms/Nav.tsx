@@ -3,11 +3,12 @@
 import { useEffect, useState } from "react";
 import Logo from "../atoms/Logo";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const menuItems = [
   "About us",
-  "Build What’s Next.",
-  "Purpose",
+  // "Build What’s Next.",
+  // "Purpose",
   "Manifest",
   "Team",
   "KPIs",
@@ -46,16 +47,17 @@ const Nav = () => {
         showNav ? "translate-y-0" : "-translate-y-full"
       )}
     >
-      <div
+      <Link
+        href="/"
         className={cn(
           "px-8 py-5 transition duration-500",
           scrolled ? "bg-white text-black" : "bg-transparent"
         )}
       >
         <Logo />
-      </div>
+      </Link>
 
-      <ul className="flex gap-6 text-sm py-5 px-8">
+      <ul className="flex gap-6 text-xs tracking-wider uppercase py-5 px-8">
         {menuItems.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
