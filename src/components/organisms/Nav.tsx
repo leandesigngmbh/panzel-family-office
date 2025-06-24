@@ -50,7 +50,7 @@ const Nav = () => {
         <Logo />
       </Link>
 
-      <ul className="flex gap-6 text-xs tracking-wider uppercase py-5 px-8 items-center">
+      <ul className="flex gap-6 text-xs tracking-wider uppercase py-3 px-8 items-center">
         {menuItems.map((item, i) => {
           const link = cleanLink(item);
 
@@ -63,9 +63,11 @@ const Nav = () => {
           );
         })}
 
-        <Link href="/contact">
-          <Button variant={"secondary"}>Contact</Button>
-        </Link>
+        <li className="ml-3">
+          <Button variant={"secondary"}>
+            <Link href="/#contact">Contact</Link>
+          </Button>
+        </li>
       </ul>
     </nav>
   );
