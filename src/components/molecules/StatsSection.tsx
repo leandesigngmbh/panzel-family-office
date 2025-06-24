@@ -18,6 +18,11 @@ type StatsItemProps = {
   subItems: SubItem[];
 };
 
+type RemainingStatsItemProps = {
+  color: string;
+  items: SubItem[];
+};
+
 const statsItems: StatsItemProps[] = [
   {
     title: "Pitch Decks Received",
@@ -124,16 +129,41 @@ const COLOR_SHADE_MAP: Record<string, string[]> = {
 
 const getTailwindShades = (color: string) => COLOR_SHADE_MAP[color] || [];
 
+const RemainingStatsItems = ({ items, color }: RemainingStatsItemProps) => {
+  const fullShades = getTailwindShades(color);
+  const subItemShades = items.map(
+    (_, i) => fullShades[i % fullShades.length] ?? "bg-gray-100"
+  );
+
+  return (
+    <div className="w-full flex text-4xl">
+      {items.map((item, i) => (
+        <div
+          key={i}
+          className={cn(
+            "flex flex-col items-start justify-end p-3 min-h-24",
+            subItemShades[i]
+          )}
+          style={{ width: `${item.to}%` }}
+        >
+          {item.prefix && <span className="text-base">{item.prefix}</span>}
+
+          <div>
+            <CountUp from={+item.from} to={+item.to} />
+            {item.suffix && <span>{item.suffix}</span>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
   const fullShades = getTailwindShades(color);
   const wrapperShade = fullShades[3] ?? "bg-gray-300";
 
   const mainItem = subItems[0];
   const otherItems = subItems.slice(1);
-
-  const subItemShades = otherItems.map(
-    (_, i) => fullShades[i % fullShades.length] ?? "bg-gray-100"
-  );
 
   return (
     <li className="flex w-full bg-gray-100 group hover:bg-gray-200 transition-colors duration-300">
@@ -158,27 +188,7 @@ const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
 
         {/* REMAINING SUBITEMS */}
         {otherItems.length > 0 && (
-          <div className="w-full flex text-4xl">
-            {otherItems.map((item, i) => (
-              <div
-                key={i}
-                className={cn(
-                  "flex flex-col items-start justify-end p-3 min-h-24",
-                  subItemShades[i]
-                )}
-                style={{ width: `${item.to}%` }}
-              >
-                {item.prefix && (
-                  <span className="text-base">{item.prefix}</span>
-                )}
-
-                <div>
-                  <CountUp from={+item.from} to={+item.to} />
-                  {item.suffix && <span>{item.suffix}</span>}
-                </div>
-              </div>
-            ))}
-          </div>
+          <RemainingStatsItems items={otherItems} color={color} />
         )}
       </div>
     </li>
