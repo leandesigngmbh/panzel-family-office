@@ -2,18 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Logo from "../atoms/Logo";
-import { cn } from "@/lib/utils";
+import { cleanLink, cn } from "@/lib/utils";
 import Link from "next/link";
 
-const menuItems = [
-  "About us",
-  // "Build What’s Next.",
-  // "Purpose",
-  "Manifest",
-  "Team",
-  "KPIs",
-  "Contact",
-];
+const menuItems = ["About us", "Manifest", "Team", "KPIs", "Contact"];
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
@@ -58,9 +50,15 @@ const Nav = () => {
       </Link>
 
       <ul className="flex gap-6 text-xs tracking-wider uppercase py-5 px-8">
-        {menuItems.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
+        {menuItems.map((item, i) => {
+          const link = cleanLink(item);
+
+          return (
+            <li key={i}>
+              <Link href={`/#${link}`}>{item}</Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
