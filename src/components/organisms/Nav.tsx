@@ -41,24 +41,18 @@ const Nav = () => {
   return (
     <nav
       className={cn(
-        `fixed flex top-0 z-50 inset-x-0 w-full transition-all duration-300 text-white`,
+        `fixed flex top-0 z-50 inset-x-0 w-full transition duration-500 text-white px-8 py-5 justify-between items-center`,
         scrolled ? "bg-black" : "bg-transparent",
         showNav ? "translate-y-0" : "-translate-y-full"
       )}
     >
-      <div className="p-4">
-        <Logo />
-      </div>
+      <Logo />
 
-      <div className="p-4 text-sm grow flex items-center justify-between">
-        <span></span>
-
-        <ul className="flex gap-6">
-          {menuItems.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
-      </div>
+      <ul className="flex gap-6 text-sm">
+        {menuItems.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
     </nav>
   );
 };
