@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import Logo from "../atoms/Logo";
 import { cleanLink, cn } from "@/lib/utils";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
-const menuItems = ["About us", "Manifest", "Team", "KPIs", "Contact"];
+const menuItems = ["About us", "Manifest", "Team", "KPIs"];
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
@@ -49,16 +50,22 @@ const Nav = () => {
         <Logo />
       </Link>
 
-      <ul className="flex gap-6 text-xs tracking-wider uppercase py-5 px-8">
+      <ul className="flex gap-6 text-xs tracking-wider uppercase py-5 px-8 items-center">
         {menuItems.map((item, i) => {
           const link = cleanLink(item);
 
           return (
             <li key={i}>
-              <Link href={`/#${link}`}>{item}</Link>
+              <Link className="whitespace-nowrap" href={`/#${link}`}>
+                {item}
+              </Link>
             </li>
           );
         })}
+
+        <Link href="/contact">
+          <Button variant={"secondary"}>Contact</Button>
+        </Link>
       </ul>
     </nav>
   );
