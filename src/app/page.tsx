@@ -11,7 +11,7 @@ import StatsSection from "@/components/molecules/StatsSection";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
 
-export const Home = () => {
+export default function Home() {
   return (
     <>
       <Nav />
@@ -47,6 +47,4 @@ export const Home = () => {
       </SmootherContainer>
     </>
   );
-};
-
-export default Home;
+}

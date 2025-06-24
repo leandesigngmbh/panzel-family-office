@@ -21,7 +21,7 @@ type StatsItemProps = {
 const statsItems: StatsItemProps[] = [
   {
     title: "Pitch Decks Received",
-    subtitle: "The breakdown of pitch decks that we've received as of 22/04/25",
+    subtitle: "The breakdown of pitch decks that we've received",
     color: "blue",
     textColor: "white",
     subItems: [
@@ -34,7 +34,7 @@ const statsItems: StatsItemProps[] = [
   {
     title: "Meetings Held",
     subtitle:
-      "Of pitch decks reviewed, this is a breakdown of those that progressed to meetings with us as of 22/04/2025",
+      "Of pitch decks reviewed, this is a breakdown of those that progressed to meetings with us",
     color: "cyan",
     subItems: [
       { from: 0, to: 87 },
@@ -52,7 +52,7 @@ const statsItems: StatsItemProps[] = [
       { from: 0, to: 90 },
       { from: 0, to: 13, prefix: "All Women", suffix: "%" },
       { from: 0, to: 62, prefix: "All Men", suffix: "%" },
-      { from: 0, to: 24, prefix: "Mixed", suffix: "%" },
+      { from: 0, to: 25, prefix: "Mixed", suffix: "%" },
     ],
   },
   {
@@ -163,13 +163,15 @@ const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
               <div
                 key={i}
                 className={cn(
-                  "w-full flex flex-col items-start justify-end p-3 min-h-24",
+                  "flex flex-col items-start justify-end p-3 min-h-24",
                   subItemShades[i]
                 )}
+                style={{ width: `${item.to}%` }}
               >
                 {item.prefix && (
                   <span className="text-base">{item.prefix}</span>
                 )}
+
                 <div>
                   <CountUp from={+item.from} to={+item.to} />
                   {item.suffix && <span>{item.suffix}</span>}
