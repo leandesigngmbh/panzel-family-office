@@ -54,6 +54,7 @@ const Manifest = () => {
 
   return (
     <div
+      id="manifest"
       ref={container}
       className="bg-black text-white text-4xl flex relative w-full"
     >

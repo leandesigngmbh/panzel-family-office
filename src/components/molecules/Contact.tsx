@@ -2,10 +2,10 @@ import { Button } from "../ui/button";
 
 const Contact = () => {
   return (
-    <section className="bg-white w-full">
+    <section id="contact" className="bg-white w-full">
       <div className="px-8 py-16 flex w-full">
         <div className="flex flex-col gap-3 w-full">
-          <h2 className="text-4xl tracking-tight">Contact Us</h2>
+          <h2 className="text-4xl tracking-tight">Contact</h2>
 
           <p className="mb-8 lg:mb-16">Get in touch with us</p>
         </div>

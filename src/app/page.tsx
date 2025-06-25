@@ -8,6 +8,7 @@ import Overview from "@/components/molecules/Overview";
 import Purpose from "@/components/molecules/Purpose";
 import ShaderBackground from "@/components/molecules/ShaderBackground";
 import StatsSection from "@/components/molecules/StatsSection";
+import Team from "@/components/molecules/Team";
 import Footer from "@/components/organisms/Footer";
 import Nav from "@/components/organisms/Nav";
 
@@ -36,6 +37,8 @@ export default function Home() {
             </div>
 
             <Manifest />
+
+            <Team />
 
             <StatsSection />
 

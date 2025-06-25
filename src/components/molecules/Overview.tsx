@@ -10,7 +10,7 @@ const keywords = [
 
 const Overview = () => {
   return (
-    <div className="flex w-full">
+    <div id="about-us" className="flex w-full">
       <div
         data-speed="0.9"
         className="bg-black text-white min-h-[140vh] w-full p-4 flex basis-1/2 flex-col items-end text-right justify-between"

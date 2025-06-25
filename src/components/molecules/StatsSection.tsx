@@ -197,7 +197,7 @@ const StatsItem = ({ title, subtitle, color, subItems }: StatsItemProps) => {
 
 const StatsSection = () => {
   return (
-    <ul className="w-full flex flex-col bg-gray-100">
+    <ul id="kpis" className="w-full flex flex-col bg-gray-100">
       {statsItems.map((item, i) => (
         <StatsItem {...item} key={i} />
       ))}
