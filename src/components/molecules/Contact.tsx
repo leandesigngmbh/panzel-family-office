@@ -12,9 +12,6 @@ const Contact = () => {
 
         <form action="#" className="space-y-8 w-full">
           <div>
-            {/* <label id="email" className="block mb-2 text-sm">
-              Email
-            </label> */}
             <input
               type="email"
               id="email"
@@ -25,9 +22,6 @@ const Contact = () => {
           </div>
 
           <div>
-            {/* <label id="subject" className="block mb-2 text-sm">
-              Subject
-            </label> */}
             <input
               type="text"
               id="subject"
@@ -38,9 +32,6 @@ const Contact = () => {
           </div>
 
           <div className="sm:col-span-2">
-            {/* <label id="message" className="block mb-2 text-sm">
-              Message
-            </label> */}
             <textarea
               id="message"
               className="block py-2.5 w-full text-sm border-b border-gray-300 focus:ring-0 placeholder-black focus:outline-none focus:border-black"
